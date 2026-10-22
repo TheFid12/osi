@@ -8,8 +8,10 @@ set(CMAKE_C_EXTENSIONS OFF)
 
 add_executable(lab2
     src/main.c
-    src/process.c
-    src/process.h
+    src/parent.c
+    src/parent.h
+    src/child.c
+    src/child.h
 )
 
 target_compile_definitions(lab2 PRIVATE _POSIX_C_SOURCE=200809L)
